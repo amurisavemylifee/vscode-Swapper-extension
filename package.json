@@ -1,8 +1,10 @@
 {
-  "name": "swap",
-  "displayName": "Swap",
+  "name": "swapper",
+  "publisher": "amurisavemylifee",
+  "displayName": "Swapper",
   "description": "Swap text",
   "version": "0.0.1",
+  "icon": ".github/assets/icon.png",
   "engines": {
     "vscode": "^1.75.0"
   },
@@ -15,13 +17,13 @@
   "contributes": {
     "commands": [
       {
-        "command": "Swap.swap",
+        "command": "Swapper.swap",
         "title": "Swap"
       }
     ],
     "keybindings": [
       {
-        "command": "Swap.swap",
+        "command": "Swapper.swap",
         "key": "ctrl+alt+5",
         "mac": "cmd+alt+5",
         "when": "editorTextFocus"
@@ -29,19 +31,11 @@
     ]
   },
   "scripts": {
-    "vscode:prepublish": "npm run compile",
-    "compile": "tsc -p ./",
-    "watch": "tsc -watch -p ./",
-    "lint": "eslint src --ext ts"
+    "package": "vsce package",
+    "compile": "tsc -p ./"
   },
   "devDependencies": {
     "@types/vscode": "^1.75.0",
-    "@types/glob": "^8.0.1",
-    "@types/node": "16.x",
-    "@typescript-eslint/eslint-plugin": "^5.49.0",
-    "@typescript-eslint/parser": "^5.49.0",
-    "eslint": "^8.33.0",
-    "glob": "^8.1.0",
     "typescript": "^4.9.4",
     "@vscode/test-electron": "^2.2.2"
   }

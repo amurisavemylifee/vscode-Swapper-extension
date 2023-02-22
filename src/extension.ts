@@ -37,8 +37,7 @@ function swap() {
 
 export function activate(context: vscode.ExtensionContext) {
   context.subscriptions.push(
-    vscode.commands.registerCommand("Swap.swap", () => {
-      console.log("Swap.swap");
+    vscode.commands.registerCommand("Swapper.swap", () => {
       swap();
     })
   );
