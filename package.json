@@ -2,8 +2,8 @@
   "name": "swapper",
   "publisher": "amurisavemylifee",
   "displayName": "Swapper",
-  "description": "Swap text",
-  "version": "0.0.1",
+  "description": "You can swap selected text or lines",
+  "version": "0.0.2",
   "icon": ".github/assets/icon.png",
   "engines": {
     "vscode": "^1.75.0"
